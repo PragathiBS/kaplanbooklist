@@ -12,7 +12,7 @@ const AddBookForm = ({ history, match }) => {
 
   function populateBookData() {
     try {
-      if (match.path === "/kaplanbooklist/form/new") {
+      if (match.path === "/form/new") {
         setBookData(() => {
           return {
             bookData: {
@@ -27,7 +27,7 @@ const AddBookForm = ({ history, match }) => {
         return;
       }
     } catch (ex) {
-        history.replace("/kaplanbooklist/not-found");
+        history.replace("/not-found");
     }
   }
 
@@ -96,7 +96,7 @@ const AddBookForm = ({ history, match }) => {
         publishedDate,
       },
     });
-    history.replace("/kaplanbooklist");
+    history.replace("/");
   }
 
   return (
