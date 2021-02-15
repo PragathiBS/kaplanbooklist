@@ -14,11 +14,11 @@ function App() {
       <BooksNavbar />
       <main>
         <Switch>
-          <Route path="/booklist" component={ContentArea}></Route>
-          <Route path="/form/new" component={AddBookForm}></Route>
-          <Route path="/not-found" component={NotFound}></Route>
-          <Redirect from="/" exact to="/booklist" />
-          <Redirect to="/not-found"/>
+          <Route path="/kaplanbooklist/booklist" component={ContentArea}></Route>
+          <Route path="/kaplanbooklist/form/new" component={AddBookForm}></Route>
+          <Route path="/kaplanbooklist/not-found" component={NotFound}></Route>
+          <Redirect from="/kaplanbooklist" exact to="/kaplanbooklist/booklist" />
+          <Redirect to="/kaplanbooklist/not-found"/>
         </Switch>
       </main>
    </React.Fragment>
