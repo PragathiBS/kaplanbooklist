@@ -7,13 +7,13 @@ function BooksNavbar(props) {
     return (
         <Navbar className="mb-2" bg="dark" variant="dark" expand="lg">
             <Container fluid>
-                <Link to="/kaplanbooklist">
+                <Link to="/">
                     <Navbar.Brand className="ml-2"><b>Books</b></Navbar.Brand>
                 </Link>
                 {
-                    location.pathname === "/kaplanbooklist/booklist" &&
+                    location.pathname === "/booklist" &&
                     (
-                        <Link to="/kaplanbooklist/form/new">
+                        <Link to="/form/new">
                             <Button variant="primary">Create New Book</Button>
                         </Link>
                     )
